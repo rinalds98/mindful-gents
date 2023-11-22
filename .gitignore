@@ -10,3 +10,4 @@ cloudinary_python.txt
 .venv
 *.pyc
 .vs-code
+env.py

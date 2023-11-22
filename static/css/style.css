@@ -1,3 +1,45 @@
-body {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* Global */
+:root {
+    --primary: #4aadfc;
+}
+
+html body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.logo {
+    height: 33px;
+}
+
+/* Navbar */
+.navbar {
+}
+
+.nav-item .nav-link {
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem !important;
+}
+
+.nav-item .nav-link:hover {
+    font-weight: bolder;
+    color: #fff;
+}
+
+.offcanvas-body {
+    padding-right: 200px !important;
+}
+
+#hero-image {
+    width: 100vw;
+}
+
+#offcanvasNavbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity by modifying the fourth parameter */
+}
+
+.navbar-toggler-icon, .btn-close {
+    filter: invert(100%);
 }

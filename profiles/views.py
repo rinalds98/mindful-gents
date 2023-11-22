@@ -1,11 +1,11 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from .forms import ExpertiseForm
 from .models import UserProfile
 from django.contrib.auth.decorators import login_required
 
 @login_required
 def registration_view(request):
-    user_profile = get_object_or_404(UserProfile, user=request.user)
+    user_profile, created = UserProfile.objects.get_or_create(user=request.user)
 
     if request.method == 'POST':
         expertise_form = ExpertiseForm(request.POST)

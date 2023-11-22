@@ -1,4 +1,4 @@
-from django.urls import path, include
+from django.urls import path
 from chat.consumers import ChatRoomConsumer
 
 # "" routes to the URL ChatConsumer which

@@ -3,10 +3,9 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 
 
 class ChatRoomConsumer(AsyncWebsocketConsumer):
-
     async def connect(self):
-        """Create and accept connection. Creates a group name for the chatroom and adds the group to the channel layer group"""
-
+        """Create and accept connection. Creates a group name for the
+        chatroom and adds the group to the channel layer group"""
         self.group_name = "group_chat_gfg"
 
         await self.channel_layer.group_add(
@@ -20,8 +19,9 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
             self.group_name,
             self.channel_name)
 
-    # Receive messages from WebSockets
     async def receive(self, text_data):
+        """Receive messages from WebSockets"""
+
         text_data_json = json.loads(text_data)
         message = text_data_json["message"]
         username = text_data_json["username"]
@@ -35,8 +35,9 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
             },
         )
 
-    # Receive message from room group
     async def send_message(self, event):
+        """Receive message from room group"""
+
         message = event["message"]
         username = event["username"]
         # send message and username of sender to websocket
@@ -48,4 +49,3 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
                 }
             )
         )
-    pass

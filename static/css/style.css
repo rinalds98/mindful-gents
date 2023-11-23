@@ -43,3 +43,8 @@ html body {
 .navbar-toggler-icon, .btn-close {
     filter: invert(100%);
 }
+
+/* registration page */
+.allauth {
+    margin-top: 150px;
+}

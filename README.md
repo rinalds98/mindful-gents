@@ -1,4 +1,6 @@
- <h1 align="center">
+
+<h1 align="center">
+
  <strong>
 Mindful-Gents
  </strong>
@@ -65,6 +67,8 @@ A link to the repository user stories can be found here
  * Team Logo 
   * Logo
 
+
+
   * Background Images
    * Welcome page
    -
@@ -100,6 +104,8 @@ A link to the repository user stories can be found here
  -
  -
  -
+
+
 
 ## Bugs and fixes
  -

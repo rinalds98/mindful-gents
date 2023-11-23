@@ -26,3 +26,5 @@ urlpatterns = [
     path('profiles/', include('profiles.urls')),
     path("chat/", include('chat.urls')),
 ]
+
+handler404 = 'mindfulgents.views.error_404'

@@ -46,8 +46,9 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+
     # project apps
-    "chat"
+    "chat",
     "profiles"
 ]
 

@@ -3,39 +3,55 @@
 
 <body>
     <center>
-        <h1>Hello , Welcome to my chat site ! {{request.user}}</h1>
+        <h1>Hello, <span style="color: green">{% if not request.user.is_authenticated %} {{ anonym_name }}{% else %}
+                {{request.user}} {% endif %}</span>.
+            Someone will join you shortly.</h1>
     </center>
     <br>
     {% if request.user.is_authenticated %}
     <center> Logout the chat Page <a href="">Logout</a></center>
     {% endif %}
-    <div class="chat__item__container" id="id_chat_item_container" style="font-size: 20px">
+    <div class=" chat__item__container" id="id_chat_item_container" style="font-size: 20px">
         <br />
         <input type="text" id="id_message_send_input" />
         <button type="submit" id="id_message_send_button">Send Message</button>
         <br />
         <br />
     </div>
+    {{ room_name|json_script:"room-name" }}
     <script>
+        const roomName = JSON.parse(document.getElementById('room-name').textContent);
+
+        console.log(roomName)
+
         const chatSocket = new WebSocket("ws://" + window.location.host + "/");
+
         chatSocket.onopen = function (e) {
             console.log("The connection was setup successfully !");
         };
         chatSocket.onclose = function (e) {
-            console.log("Something unexpected happened !");
+            console.log("Something unexpected happened!");
         };
+
         document.querySelector("#id_message_send_input").focus();
+
         document.querySelector("#id_message_send_input").onkeyup = function (e) {
             if (e.keyCode == 13) {
                 document.querySelector("#id_message_send_button").click();
             }
         };
+
         document.querySelector("#id_message_send_button").onclick = function (e) {
             var messageInput = document.querySelector(
                 "#id_message_send_input"
             ).value;
-            chatSocket.send(JSON.stringify({ message: messageInput, username: "{{request.user.username}}" }));
+            if ("{{request.user.username}}") {
+                chatSocket.send(JSON.stringify({ message: messageInput, username: "{{request.user.username}}" }));
+            } else {
+                chatSocket.send(JSON.stringify({ message: messageInput, username: "{{room_name}}" }));
+            }
         };
+
         chatSocket.onmessage = function (e) {
             const data = JSON.parse(e.data);
             var div = document.createElement("div");

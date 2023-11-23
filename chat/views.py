@@ -1,9 +1,18 @@
 from django.shortcuts import render, redirect
 
 
-def chat_room(request, *args, **kwargs):
-    if not request.user.is_authenticated:
-        # return redirect("login")
-        return redirect("index.html")
-    context = {}
+def chat_page(request):
+    """"""
+    return render(request, "chatpage.html")
+
+
+def chat_room(request, room_name, *args, **kwargs):
+    
+    anonym_name = None
+    if not request.user.is_authenticated:        
+        anonym_name = room_name
+
+    context = {"anonym_name": anonym_name,
+               "room_name": room_name}
+    
     return render(request, "chatroom.html", context)

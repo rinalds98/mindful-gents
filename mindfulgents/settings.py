@@ -46,10 +46,9 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
-
     # project apps
     "chat",
-    "profiles"
+    "profiles",
 ]
 
 MIDDLEWARE = [
@@ -62,7 +61,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",
-
 ]
 
 ROOT_URLCONF = "mindfulgents.urls"
@@ -99,6 +97,7 @@ CHANNEL_LAYERS = {
         'BACKEND': "channels.layers.InMemoryChannelLayer"
     }
 }
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases

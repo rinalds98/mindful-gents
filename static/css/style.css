@@ -98,4 +98,8 @@ footer {
     font-size: 3rem;
     text-align: center;
     padding-top: 1rem;
+
+/* registration page */
+.allauth {
+    margin-top: 150px;
 }

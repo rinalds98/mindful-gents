@@ -21,7 +21,7 @@ application = get_asgi_application()
 
 application = ProtocolTypeRouter(
     {
-        "http": get_asgi_application(),
+        "http": application,
         "websocket": AuthMiddlewareStack(
             URLRouter(
                 routing.websocket_urlpatterns

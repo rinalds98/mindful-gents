@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 
 
 def chat_page(request):
@@ -16,3 +16,7 @@ def chat_room(request, room_name, *args, **kwargs):
                "room_name": room_name}
     
     return render(request, "chatroom.html", context)
+
+def get_open_rooms():
+    pass
+    

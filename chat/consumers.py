@@ -6,7 +6,11 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         """Create and accept connection. Creates a group name for the
         chatroom and adds the group to the channel layer group"""
-        self.group_name = "group_chat_gfg"
+
+        self.room_name = self.scope["url_route"]["kwargs"]["room_name"]
+        self.group_name = f"chat_{self.room_name}"
+        print(self.room_name)
+        print(self.group_name)
 
         await self.channel_layer.group_add(
             self.group_name,

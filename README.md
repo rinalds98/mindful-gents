@@ -1,4 +1,6 @@
+
 <h1 align="center">
+
  <strong>
 Mindful-Gents
  </strong>
@@ -53,8 +55,8 @@ A link to the repository user stories can be found here
 
   ### Color Design
   ### Visual Design
-  
-  
+
+
 
 ## Typography
  -
@@ -64,7 +66,9 @@ A link to the repository user stories can be found here
 ## Imagery
  * Team Logo 
   * Logo
- 
+
+
+
   * Background Images
    * Welcome page
    -
@@ -100,7 +104,9 @@ A link to the repository user stories can be found here
  -
  -
  -
- 
+
+
+
 ## Bugs and fixes
  -
  -
@@ -127,9 +133,8 @@ A link to the repository user stories can be found here
    communication and teamwork within organizations, teams, and communities.
 
 ## Credits
- 
+
   **Thank you to all the team members for the hard work and cooperation.**
 
  -
  -
- 

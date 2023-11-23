@@ -28,7 +28,7 @@
             aria-label="Open Menu">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand mx-auto" href="#">
+          <a class="navbar-brand mx-auto" href="{% url 'index' %}">
             <img
               class="logo"
               src="{% static 'images/logo.webp' %}"
@@ -57,15 +57,8 @@
                 <li class="nav-item">
                   <a
                     class="nav-link"
-                    href="#"
+                    href="{% url 'index' %}"
                     >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    >Something</a
                   >
                 </li>
                 <li class="nav-item">
@@ -77,15 +70,30 @@
                     >Something Else</a
                   >
                 </li>
+                {% if request.user.is_authenticated %}
                 <li class="nav-item">
                   <a
                     class="nav-link"
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#logout-modal"
+                    href="{% url 'account_logout' %}"
+                    >Log Out</a
+                  >
+                </li>
+                {% else %}
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="{% url 'account_login' %}"
                     >Log In</a
                   >
                 </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="{% url 'account_signup' %}"
+                    >Sign Up</a
+                  >
+                </li>
+                {% endif %}
               </ul>
             </div>
           </div>

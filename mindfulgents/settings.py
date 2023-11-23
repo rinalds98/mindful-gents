@@ -40,10 +40,14 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "daphne",
+    "channels",
     "django.contrib.staticfiles",
     "allauth",
-    "allauth.account", 
+    "allauth.account",
     "allauth.socialaccount",
+    # project apps
+    "chat",
     "profiles",
 ]
 
@@ -57,7 +61,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",
-    
 ]
 
 ROOT_URLCONF = "mindfulgents.urls"
@@ -82,10 +85,18 @@ TEMPLATES = [
 WSGI_APPLICATION = "mindfulgents.wsgi.application"
 
 
-AUTHENTICATION_BACKENDS = ( 
-    'django.contrib.auth.backends.ModelBackend', 
-    'allauth.account.auth_backends.AuthenticationBackend', 
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 )
+ASGI_APPLICATION = "mindfulgents.asgi.application"
+
+# Known security vulnerability
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': "channels.layers.InMemoryChannelLayer"
+    }
+}
 
 
 # Database
@@ -122,7 +133,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -144,7 +154,6 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 ACCOUNT_SIGNUP_REDIRECT_URL = '/profiles/registration/'
-
 
 
 # Static files (CSS, JavaScript, Images)

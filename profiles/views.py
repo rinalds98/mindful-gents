@@ -24,3 +24,13 @@ def registration_view(request):
     }
 
     return render(request, 'registration.html', context)
+
+
+
+context = {
+        'information': index.html,
+    }
+
+     return render(request, 'information-hub.html', context)
+
+

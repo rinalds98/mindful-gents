@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+    <div class="container allauth">
+        <div class="emoji">😕</div>
+        <h1>Oops! Page Not Found</h1>
+        <p>We couldn't find the page you were looking for.</p>
+        <a class="btn btn-primary" href="{% url 'index' %}">Go back to Home</a>
+    </div>
+</body>
+
+{% endblock %}

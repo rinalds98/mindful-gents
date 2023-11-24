@@ -17,11 +17,8 @@
     <input id="room-name-input" type="text" size="100"><br>
     {% endif %}
     <input id="room-name-submit" type="button" value="Enter" required>
-    <div>
-        {% for room in open_rooms %}
-        {{ room }}
-        {% endfor %}
-    </div>
+
+    <!-- Chatbot script -->
     <script>
         document.querySelector('#room-name-input').focus();
         document.querySelector('#room-name-input').onkeyup = function (e) {

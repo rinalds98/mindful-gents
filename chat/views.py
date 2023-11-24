@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, Http404
 from chat.models import OpenRoom
 from django.contrib.auth.decorators import login_required
+from random import randint
 
 
 def chat_page(request):
@@ -23,15 +24,20 @@ def chat_room(request, room_name):
         anonym_name = room_name
 
     # create a new OpenRoom object
-    current_room, created = OpenRoom.objects.get_or_create(
-        chat_room_name=room_name, chat_room_url=request.path)
+    
+    rooms = [room.chat_room_name for room in OpenRoom.objects.all()]
 
-    if not get_referer(request):
-        raise Http404
+    suffix = "".join([str(randint(0,9)) for x in range(4)])
+    display_name = f"{room_name}_{suffix}"
+    current_room = OpenRoom.objects.create(
+            chat_room_name=display_name, chat_room_url=request.path)
+        
 
-    context = {"anonym_name": anonym_name,
-               "room_name": room_name,
-               "current_room": current_room}
+    context = {
+        "anonym_name": anonym_name,
+        "room_name": room_name,
+        "current_room": current_room,
+        }
 
     return render(request, "chatroom.html", context)
 
@@ -40,12 +46,10 @@ def chat_room(request, room_name):
 def chat_lobby(request):
     open_rooms = OpenRoom.objects.all()
 
-    url_base = request.get_host()
-    print("path:", url_base)
-
     context = {
-        "open_rooms":  open_rooms,
+        "open_rooms":  open_rooms,    
     }
+    
     return render(request, "chatlobby.html", context)
 
 
@@ -53,4 +57,7 @@ def leave_room(request, pk):
     room = OpenRoom.objects.get(id=pk)
 
     room.delete()
-    return redirect('index')
+    if not request.user.is_authenticated:
+        return redirect('index')
+    else:
+        return redirect("../lobby")

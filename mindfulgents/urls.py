@@ -20,11 +20,12 @@ from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', views.index, name='index'),
-    path("information/", views.information, name='information'),
     re_path(r'^accounts/', include('allauth.urls')),
     path('profiles/', include('profiles.urls')),
     path("chat/", include('chat.urls')),
+    path('', views.index, name='index'),
+    path("information/", views.information, name='information'),
+    path('crisis/', views.crisis, name='crisis'),
 ]
 
 handler404 = 'mindfulgents.views.error_404'

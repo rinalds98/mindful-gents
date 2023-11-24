@@ -1,5 +1,5 @@
 <h1 align="center">
- <strong>
+<strong>
 Mindful-Gents
  </strong>
  </h1>
@@ -16,16 +16,19 @@ This project is deployed and can be accessed at
 
 In this section, we will briefly discuss how our team addressed the applicable criteria:
 
- - Project is Front End and Back End.
+
+ - Project is 100% Front End and Back End.
  - Project is
  - 
  - 
  - Use Frameworks such as
+  
 
  # ABOUT SUBMISSION
+  
 
  ## Introduction
- ----------
+     ----------
 
  ## Goal
 
@@ -45,6 +48,9 @@ In this section, we will briefly discuss how our team addressed the applicable c
  -
  -
  -
+  
+  
+  
 A link to the repository user stories can be found here 
 
 ![Project Board]
@@ -52,10 +58,10 @@ A link to the repository user stories can be found here
 ## Design
 
   ### Color Design
+  
   ### Visual Design
   
-  
-
+ 
 ## Typography
  -
  -
@@ -64,7 +70,7 @@ A link to the repository user stories can be found here
 ## Imagery
  * Team Logo 
   * Logo
- 
+  
   * Background Images
    * Welcome page
    -
@@ -87,8 +93,7 @@ A link to the repository user stories can be found here
  www.figma.com -
 
 ## Tech
-* HTML5
-* CSS3
+  
 * HTML5
 * CSS3
 * Bootstrap
@@ -106,16 +111,22 @@ In order to make a local copy of this project, you can clone it.
 In your IDE Terminal, type the following command to clone our repository:
 
 
-
-
-
 ## Testing
 
 The site was tested on the following browsers: 
 - Firefox
 - Chrome
 - Safari
-- Edge
+- Microsoft Edge
+  
+  
+![Languages]
+
+
+## Testing
+ -
+ -
+ -
 
 
 ## Bugs and fixes
@@ -144,13 +155,13 @@ The site was tested on the following browsers:
    communication and teamwork within organizations, teams, and communities.
 
 ## Credits
- 
+  
   **Thank you to all the team members for the hard work and cooperation.**
   
   
 
- - **Rinalds Zimelis** - [GitHub](https://github.com/rinalds98), [LinkedIn](https://www.linkedin.com/in/rinalds-zimelis/)  Scrum Master/ Frontend / Back End/ Documentation
+ - **Rinalds Zimelis** - [GitHub](https://github.com/rinalds98), [LinkedIn](https://www.linkedin.com/in/rinalds-zimelis/)  
+  Scrum Master/ Frontend / Back End/ Documentation
+  
  - ** **-
-
- 
  

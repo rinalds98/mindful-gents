@@ -2,13 +2,13 @@
 {% load static %}
 {% block content %}
 
-<div class="container mt-5">
+<div class="container-fluid d-flex align-items-center justify-content-center allauth">
 <form method="post" action="{% url 'registration' %}">
     {% csrf_token %}
 
     {{ expertise_form.as_p }}
 
-    <button type="submit">Submit</button>
+    <button class="btn btn-outline-primary btn-lg" type="submit">Submit</button>
 </form>
 </div>
 

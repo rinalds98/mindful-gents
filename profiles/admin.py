@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import UserProfile
 
+class UserProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'isExpert', 'expertinfo', 'description')
 
-list_display = ('user', 'isExpert')
-admin.site.register(UserProfile)
+admin.site.register(UserProfile, UserProfileAdmin)

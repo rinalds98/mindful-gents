@@ -24,4 +24,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     re_path(r'^accounts/', include('allauth.urls')), 
     path('profiles/', include('profiles.urls')),
+    path('crisis/', views.crisis, name='crisis'),
 ]

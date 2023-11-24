@@ -16,7 +16,7 @@ This project is deployed and can be accessed at
 
 In this section, we will briefly discuss how our team addressed the applicable criteria:
 
- - Project is 100% Front End and Back End.
+ - Project is Front End and Back End.
  - Project is
  - 
  - 
@@ -89,18 +89,35 @@ A link to the repository user stories can be found here
 ## Tech
 * HTML5
 * CSS3
--
--
--
--
+* HTML5
+* CSS3
+* Bootstrap
+* JavaScript
+* Django
+* Python
+* API
+* Heroku
+
 ![Languages]
+
+## Local Deployment
+
+In order to make a local copy of this project, you can clone it.
+In your IDE Terminal, type the following command to clone our repository:
+
+
+
 
 
 ## Testing
- -
- -
- -
- 
+
+The site was tested on the following browsers: 
+- Firefox
+- Chrome
+- Safari
+- Edge
+
+
 ## Bugs and fixes
  -
  -
@@ -129,7 +146,11 @@ A link to the repository user stories can be found here
 ## Credits
  
   **Thank you to all the team members for the hard work and cooperation.**
+  
+  
 
- -
- -
+ - **Rinalds Zimelis** - [GitHub](https://github.com/rinalds98), [LinkedIn](https://www.linkedin.com/in/rinalds-zimelis/)  Scrum Master/ Frontend / Back End/ Documentation
+ - ** **-
+
+ 
  

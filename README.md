@@ -28,60 +28,53 @@ In this section, we will briefly discuss how our team addressed the applicable c
   
 
  ## Introduction
-     ----------
+     
 
- ## Goal
 
- -
- -
- -
- -
- -
- -
- -
- -
+ ## Goals
+
+   The team goals is to create a site with the following functionalies.
+
+  * Website app with Chat Functionality and crisis response.
+  * Emergency hotlines and website.
+  * Information of what to do in certain situations ie. stress/anxiety with help.
+  * Simple layout (3 pages) homepage with hero photo and call to action buttons.
+
 
 ## User Stories
- -
- -
- -
- -
- -
- -
-  
-  
-  
-A link to the repository user stories can be found here 
 
-![Project Board]
+  
+A link to the repository user stories can be found here.()
+
+![Project Board](/readme-image/Mindful-Gents-project-board.png) 
 
 ## Design
 
   ### Color Design
   
+  * Color palette()
+
+
+  
   ### Visual Design
+
+  * site looks and setup()
   
  
 ## Typography
- -
- -
- -
+ 
+ *  The font chosen for the site was Source Sans 3 - a Sans Serif font. It was picked from Google Fonts 
+    as we wanted an easy to read font that was inviting for a user to continue reading and browsing throughout the site.  
 
 ## Imagery
- * Team Logo 
-  * Logo
+ * Team Logo was created using()
+  * Logo was designed to incorporate bright colorway using() 
   
-  * Background Images
+  * Background Images All images used throughout site are royalty free and sourced from [istock](www.istock.com).
+
    * Welcome page
-   -
-   -
-   -
-   -
-   -
-   -
-   -
-   -
-   -
+   * 
+
 
   * Favicon
 
@@ -90,7 +83,8 @@ A link to the repository user stories can be found here
  -
 
 ## Wireframes
- www.figma.com -
+ [Figma](www.figma.com) is a cloud-based design and prototyping tool that is widely used for creating user interfaces (UI) and user experience (UX) designs. 
+
 
 ## Tech
   
@@ -104,6 +98,7 @@ A link to the repository user stories can be found here
 * Heroku
 
 ![Languages]
+
 
 ## Local Deployment
 
@@ -130,7 +125,8 @@ The site was tested on the following browsers:
 
 
 ## Bugs and fixes
- -
+ - Changes to Chat model - caused issues with migration - solution delete database and migrate again.
+
  -
  -
 

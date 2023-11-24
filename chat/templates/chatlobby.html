@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="m-5">
+    <div class="container p-5"></div>
+    <h1 class="text-light">Open rooms</h1>
+    {% if not open_rooms %}
+    No one is waiting
+    {% else %}
+    {% for room in open_rooms %}
+    <p class="text-light">{{ room.chat_room_name }} | <a href="{{ room.chat_room_url }}">Click to enter</a>
+    </p>
+    {% endfor %}
+    {% endif %}
+    </div>
+</section>
+{% endblock %}

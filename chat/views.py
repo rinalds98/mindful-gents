@@ -49,7 +49,7 @@ def chat_lobby(request):
     return render(request, "chatlobby.html", context)
 
 
-def leave_room(pk):
+def leave_room(request, pk):
     room = OpenRoom.objects.get(id=pk)
 
     room.delete()

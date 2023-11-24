@@ -2,25 +2,34 @@
 {% load static %}
 {% block content %}
 
+
 <div class="crisis-resourse-list">
     <dl>
         <dt>Befrienders Worldwide</dt>
         <dd> - Worldwide directory of emotional support helplines. | <a href="https://befrienders.org/">Website</a></dd>
         <dt>Campaign Against Living Miserably (CALM)</dt> 
-        <dd> - Provides listening services, information and support for anyone who needs to talk, including a web chat. | <a href="calmzone.net">Website</a> | 0800 58 58 58</dd>
+        <dd> - Provides listening services, information and support for anyone who needs to talk, including a web chat. | <a href="https://calmzone.net">Website</a> | 0800 58 58 58</dd>
         <dt>The Mix</dt>
-        <dd> - Support and advice for under 25s, including a helpline, crisis messenger service and webchat. | <a href="themix.org.uk"> Website</a> | 0808 808 4994 | 85258 (crisis messenger service, text THEMIX)</dd>
+        <dd> - Support and advice for under 25s, including a helpline, crisis messenger service and webchat. | <a href="https://themix.org.uk"> Website</a> | 0808 808 4994 | 85258 (crisis messenger service, text THEMIX)</dd>
         <dt>National Suicide Prevention Helpline UK</dt>
-        <dd> - Helpline offering a supportive listening service to anyone with thoughts of suicide. Open from 6pm to midnight every day. If you are unable to connect to the main number you can call 0800 689 0880. | <a href="www.spbristol.org/NSPHUK"> Website</a> | 0800 689 5652</dd>
+        <dd> - Helpline offering a supportive listening service to anyone with thoughts of suicide. Open from 6pm to midnight every day. If you are unable to connect to the main number you can call 0800 689 0880. | <a href="https://www.spbristol.org/NSPHUK"> Website</a> | 0800 689 5652</dd>
         <dt>NHS UK</dt>
-        <dd>Information about health problems and treatments, including details of local NHS services in England. | <a href="nhs.uk">Website</a></dd>
+        <dd>Information about health problems and treatments, including details of local NHS services in England. | <a href="https://nhs.uk">Website</a></dd>
         <dt>Relay UK</dt>
-        <dd> - Provides a talk/type relay service for anyone who has difficulty hearing or being understood when speaking over the phone. The cost of making phone calls through this service depends on your telephone service provider. | <a href="relayuk.bt.com">Website</a></dd>
+        <dd> - Provides a talk/type relay service for anyone who has difficulty hearing or being understood when speaking over the phone. The cost of making phone calls through this service depends on your telephone service provider. | <a href="https://relayuk.bt.com">Website</a></dd>
         <dt>Rethink Mental Illness</dt>
-        <dd> - Provides support and information for anyone affected by mental health problems, including local support groups. | <a href="rethink.org">Website</a> | 0808 801 0525</dd>
-        <p>Find services in your area using the search below.</p>
+        <dd> - Provides support and information for anyone affected by mental health problems, including local support groups. | <a href="https://rethink.org">Website</a> | 0808 801 0525</dd>
     </dl>
-    <!--NHS tool start--><iframe class="nhs-widget" title="NHS.UK Find services widget" src="https://developer.api.nhs.uk/widgets/services/all/?uid=03781080-8a24-11ee-b96f-c342cf526b3a"></iframe><!--NHS tool end-->
 </div>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <!--NHS tool start--><iframe class="nhs-widget" title="NHS.UK Find services widget" src="https://developer.api.nhs.uk/widgets/services/all/?uid=03781080-8a24-11ee-b96f-c342cf526b3a"></iframe><!--NHS tool end-->
+    </div>
+    <div id="map-info" class="col-12 col-md-6">
+        <div id="mapContainer"></div>
+        <p>Search for services in your location</p>
+    </div>
+</div>
+
 
 {% endblock %}

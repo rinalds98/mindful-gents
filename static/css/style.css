@@ -43,6 +43,7 @@ nav {
     filter: invert(100%);
 }
 
+/* Crisis Services */
 .crisis-resourse-list {
     margin-top: 80px;
     background-color: #3E403F;
@@ -59,7 +60,7 @@ iframe {
     border-radius: 5px;
 }
 
-.nhs-widget {
+.nhs-widget, #mapContainer {
     border-style: solid;
     border-width: 5px;
     border-color: #2FCCCB; 
@@ -82,6 +83,12 @@ dd, p {
 
 dd a {
     color: #2FCCCB;
+}
+
+#mapContainer {
+    
+    width: 500px;
+    height: 400px;
 }
 
 /* Hero */

@@ -1,13 +1,13 @@
 from django import forms
+from django.contrib.auth.models import User
+from .models import UserProfile
 
-class ExpertiseForm(forms.Form):
-    EXPERT_CHOICES = [
-        (True, 'Yes, I am an expert'),
-        (False, 'No, I am not an expert'),
-    ]
+class UserProfileForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['isExpert', 'expertinfo', 'description']
 
-    isExpert = forms.ChoiceField(
-        choices=EXPERT_CHOICES,
-        widget=forms.RadioSelect,
-        label='Are you an expert?'
-    )
+class UserForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['username', 'email'] 

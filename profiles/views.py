@@ -1,26 +1,28 @@
 from django.shortcuts import render, redirect
-from .forms import ExpertiseForm
-from .models import UserProfile
 from django.contrib.auth.decorators import login_required
+from .forms import UserProfileForm
+from .models import UserProfile
+from django.contrib import messages
 
 @login_required
-def registration_view(request):
+def user_profile_view(request):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
 
     if request.method == 'POST':
-        expertise_form = ExpertiseForm(request.POST)
+        profile_form = UserProfileForm(request.POST, instance=user_profile)
 
-        if expertise_form.is_valid():
-            is_expert = expertise_form.cleaned_data['isExpert']
+        if profile_form.is_valid():
+            is_expert = profile_form.cleaned_data['isExpert']
             user_profile.isExpert = is_expert
-            user_profile.save()
+            profile_form.save()
+            messages.success(request, 'Profile updated successfully!')
             return redirect('index')
 
     else:
-        expertise_form = ExpertiseForm()
+        profile_form = UserProfileForm(instance=user_profile)
 
     context = {
-        'expertise_form': expertise_form,
+        'profile_form': profile_form,
     }
 
     return render(request, 'registration.html', context)

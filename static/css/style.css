@@ -22,7 +22,7 @@ nav {
 .nav-item .nav-link {
     font-weight: bold;
     color: var(--primary);
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 1rem 1.5rem !important;
 }
 
@@ -162,4 +162,25 @@ form, li {
 #hint_id_password, a {
     text-decoration: none !important;
     color: var(--primary) !important;
+}
+
+/* Information Hub */
+h2 {
+    color: var(--primary) !important;
+}
+
+h4 {
+    color: var(--primary) !important;
+}
+
+.nhs-tool {
+    background-color: transparent !important;
+}
+
+p, .disclaimer {
+    color: #fff !important;
+}
+
+a.btn {
+    color: #fff !important;
 }

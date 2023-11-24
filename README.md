@@ -43,6 +43,30 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
 ## User Stories
 
+
+* As a user, I want to be able to log into the website and browse through the navbar and fimd imformation 
+ easily.
+
+* As a user, I  want sign up for any  resources and information that I might be interested in.
+
+* As a user, I want to view hero images and content on the site that encourage men to look after their    menntal health.
+
+*As a user, Iwant to see  resources and the impact of community involvement in men's mental health.
+
+* As a user, I want to view the information-hub about the event and staticstic of men mental health and 
+  how to get support.
+
+* As a user, I want to upload my trash collected to keep track of the waste on the shores and review my impact over time.
+
+* As a user, I want to be able to navigate to a 'contact us' page so that I can find 'Mindful-gent's chat features and login details.
+
+
+
+
+
+
+
+
   
 A link to the repository user stories can be found here.()
 

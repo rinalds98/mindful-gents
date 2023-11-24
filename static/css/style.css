@@ -139,9 +139,27 @@ footer {
     font-size: 3rem;
     text-align: center;
     padding-top: 1rem;
+}
 
 /* registration page */
 .allauth {
     margin-top: 150px;
 }
 
+/* Login/Signup Forms */
+h3 {
+    color: var(--primary) !important;
+}
+
+label {
+    color: #fff;
+}
+
+form, li {
+    color: #fff;
+}
+
+#hint_id_password, a {
+    text-decoration: none !important;
+    color: var(--primary) !important;
+}

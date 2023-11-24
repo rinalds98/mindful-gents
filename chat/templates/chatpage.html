@@ -1,0 +1,56 @@
+<!-- chat/templates/chat/index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chat Rooms</title>
+</head>
+
+<body>
+    {% if request.user.is_authenticated %}
+    <h1>Hi {{ request.user }}</h1>
+    <input id="room-name-input" type="text" size="100" value="{{ request.user }}" hidden>
+    {% else %}
+    <h2>Would like to talk to someone?</h2>
+    <label>Please tell us your name (this is required)</label>
+    <input id="room-name-input" type="text" size="100"><br>
+    {% endif %}
+    <input id="room-name-submit" type="button" value="Enter" required>
+    <div>
+        {% for room in open_rooms %}
+        {{ room }}
+        {% endfor %}
+    </div>
+    <script>
+        document.querySelector('#room-name-input').focus();
+        document.querySelector('#room-name-input').onkeyup = function (e) {
+            if (e.keyCode === 13) {  // enter, return
+                document.querySelector('#room-name-submit').click();
+            }
+        };
+
+        document.querySelector('#room-name-input').addEventListener('invalid', function (event) {
+            if (event.target.validity.valueMissing) {
+                event.target.setCustomValidity('Please tell us how we should address you.');
+            }
+        })
+
+        document.querySelector('#room-name-input').addEventListener('change', function (event) {
+            event.target.setCustomValidity('');
+        })
+
+        document.querySelector('#room-name-submit').onclick = function (e) {
+            var roomName = document.querySelector
+                ('#room-name-input').value;
+            if (roomName) {
+
+                window.location.pathname = '/chat/room/' + roomName + '/';
+            } else {
+
+            }
+        };
+    </script>
+</body>
+
+</html>

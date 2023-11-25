@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-
-<body>
-    <center>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <center class="m-5">
         {{ current_room }}
         {{ current_room.id }}
-        <h1 id="chat-status">Hello, <span style="color: green">{% if not request.user.is_authenticated %} {{ anonym_name }}{% else %}
+        <h1 id="chat-status" class="text-light">Hello, <span style="color: green">{% if not request.user.is_authenticated %} {{ anonym_name }}{% else %}
                 {{request.user}} {% endif %}</span>.
             Someone will join you shortly.</h1>
     </center>
@@ -13,17 +12,18 @@
     {% if request.user.is_authenticated %}
     <center> Logout the chat Page <a href="">Logout</a></center>
     {% endif %}
-    <div class=" chat__item__container" id="id_chat_item_container" style="font-size: 20px">
+    <div class="chat__item__container" id="id_chat_item_container" style="font-size: 20px">
         <br />
-        <input type="text" id="id_message_send_input" disabled/>
+        <input type="text" id="id_message_send_input" disabled />
         <button type="submit" id="id_message_send_button" disabled>Send Message</button>
         <br />
         <br />
-        <a id="leave-chat" href="{% url 'chat:leave_room' current_room.pk %}" class="button">Leave chat</a>
+        <a id="leave-chat" href="{% url 'chat:leave_room' room_name %}" class="button">Leave chat</a>
     </div>
     {{ room_name|json_script:"room-name" }}
     <script>
-        const roomName = JSON.parse(document.getElementById('room-name').textContent);
+        name = JSON.parse(document.getElementById('room-name').textContent);
+        const roomName = name.replace(" ", "")
         let joined = false;
 
         console.log(roomName)
@@ -82,6 +82,4 @@
             };
         }
     </script>
-</body>
-
-</html>
+{% endblock %}

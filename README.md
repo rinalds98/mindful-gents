@@ -29,7 +29,7 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
  ## Introduction
     
-     Mindful Gents  aims to offers a discreet and confidential chat service designed to support the 75% of men who may find it challenging to discuss their mental health with friends or family. Our professional volunteers are available to lend a compassionate ear, providing a safe space for open conversations. We hope that our users will utilise our anonymous chat function to express thoughts and feelings without judgment or disclosure. Your well-being matters, and at Mindful Gents, we're committed to fostering a supportive community for men seeking assistance in navigating their mental health journey.
+  Mindful Gents  aims to offers a discreet and confidential chat service designed to support the 75% of men who may find it challenging to discuss their mental health with friends or family. Our professional volunteers are available to lend a compassionate ear, providing a safe space for open conversations. We hope that our users will utilise our anonymous chat function to express thoughts and feelings without judgment or disclosure. Your well-being matters, and at Mindful Gents, we're committed to fostering a supportive community for men seeking assistance in navigating their mental health journey.
 
  ## Goals
 
@@ -75,8 +75,8 @@ In this section, we will briefly discuss how our team addressed the applicable c
   ![Color pallette](static/images/readme-image/colour-image.png)
 
   ### Visual Design
-
-  ! [site set-up](static/images/readme-image/database schema.png)
+  
+   ![set-up](static/images/readme-image/database schema.png)
   
 ## Typography
  
@@ -89,12 +89,12 @@ In this section, we will briefly discuss how our team addressed the applicable c
     
   * Background Images All images used throughout site are royalty free and sourced from 
     [Logo](https://logo.com/)
-    
-    * Pixel Art
+  
+  * Pixel Art
      * The pixel art was designed using [pixel art](https://www.pixilart.com)
-    * Front page 
+  * Front page 
      * The images were takenfrom [Logo](https://logo.com/)
-    * Favicon
+  * Favicon
      * Favicon was created using [Logo](https://logo.com/)
 
 ## Controls
@@ -149,8 +149,7 @@ The site was tested on the following browsers:
 
  - Changes to Chat model - caused issues with migration - solution delete database and migrate again.
 
- -
- -
+
 
 ## Programs Used
  

@@ -96,8 +96,10 @@ In this section, we will briefly discuss how our team addressed the applicable c
      * The images were takenfrom [Logo](https://logo.com/)
   * Favicon
      * Favicon was created using [Logo](https://logo.com/)
+     
   *  Api/Maps was created using [here develper](https://developer.here.com/)
-    * Maps and crisis services content were gotten from [Mind](https://www.mind.org.uk/)
+
+  * Maps and crisis services content were gotten from [Mind](https://www.mind.org.uk/)
 
 ## Controls
 

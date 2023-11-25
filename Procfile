@@ -1,1 +1,1 @@
-daphne -p 8001 mindfulgents.wsgi:application
+web: gunicorn mindfulgents.wsgi:application

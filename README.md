@@ -18,18 +18,18 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
 
  - Project is 100% Front End and Back End.
- - Project is
- - 
- - 
- - Use Frameworks such as
+ - Project must have home page, crisis and information hub.
+ - Project must have chat option for volunters, professional and users looking to chat.
+ - Basic Readme.md in place
+ - Use Frameworks such as env.py, urls.py, js.
   
 
  # ABOUT SUBMISSION
   
 
  ## Introduction
-     
-
+    
+     Mindful Gents  aims to offers a discreet and confidential chat service designed to support the 75% of men who may find it challenging to discuss their mental health with friends or family. Our professional volunteers are available to lend a compassionate ear, providing a safe space for open conversations. We hope that our users will utilise our anonymous chat function to express thoughts and feelings without judgment or disclosure. Your well-being matters, and at Mindful Gents, we're committed to fostering a supportive community for men seeking assistance in navigating their mental health journey.
 
  ## Goals
 
@@ -38,7 +38,9 @@ In this section, we will briefly discuss how our team addressed the applicable c
   * Website app with Chat Functionality and crisis response.
   * Emergency hotlines and website.
   * Information of what to do in certain situations ie. stress/anxiety with help.
-  * Simple layout (3 pages) homepage with hero photo and call to action buttons.
+  * Simple layout (3 pages) homepage with hero photos and call to action buttons.
+  * Anonymous chat function to express thoughts
+  * App that offer support for men seeking assistance in navigating their mental health journey.
 
 
 ## User Stories
@@ -61,16 +63,7 @@ In this section, we will briefly discuss how our team addressed the applicable c
 * As a user, I want to be able to navigate to a 'contact us' page so that I can find 'Mindful-gent's chat features and login details.
 
 
-
-
-
-
-
-
-  
-A link to the repository user stories can be found here.()
-
-![Project Board](/readme-image/Mindful-Gents-project-board.png) 
+![Project Board]() 
 
 ## Design
 
@@ -137,15 +130,9 @@ The site was tested on the following browsers:
 - Chrome
 - Safari
 - Microsoft Edge
-  
-  
+
+
 ![Languages]
-
-
-## Testing
- -
- -
- -
 
 
 ## Bugs and fixes

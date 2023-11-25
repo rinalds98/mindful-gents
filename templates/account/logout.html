@@ -19,8 +19,8 @@
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
       {% endif %}
       
-      <button class="btn btn-outline-success" type="submit">{% trans 'Sign Out' %}</button>
-      <a class="btn btn-outline-danger" id="custom_logout_no" href="/accounts/profile/">{% trans 'No' %}</a>
+      <button class="btn btn-success" type="submit">{% trans 'Sign Out' %}</button>
+      <a class="btn btn-danger" id="custom_logout_no" href="{% url 'index' %}">{% trans 'No' %}</a>
     </form>
   </div>
 

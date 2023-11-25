@@ -82,6 +82,13 @@
                     >Information Hub</a
                   >
                 </li>
+                <li class="nav-item">
+                  {% if user.is_authenticated %}
+                  <a href="{% url 'chat:lobby' %}" class="nav-link">Chat Lobby</a>
+                  {% else %}
+                  <a href="{% url 'chat:index' %}" class="nav-link">Chat</a>
+                  {% endif %}
+                </li>
                 {% if request.user.is_authenticated %}
                 <li class="nav-item">
                   <a

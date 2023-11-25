@@ -32,7 +32,7 @@ nav {
 }
 
 .offcanvas-body {
-    padding-right: 200px !important;
+    padding-right: 125px !important;
 }
 
 #offcanvasNavbar {
@@ -51,9 +51,9 @@ nav {
 
 iframe {
     margin-left: 20px;
-    width: 100%; 
-    height: 400px; 
-    max-width: 500px;
+    width: 500px; 
+    height: 400px;
+    max-width: 90%;
     border-style: solid;
     border-width: 10px;
     border-color: #2FCCCB; 
@@ -86,9 +86,14 @@ dd a {
 }
 
 #mapContainer {
-    
+    margin-left: 20px;
     width: 500px;
     height: 400px;
+    max-width: 90%;
+}
+
+#map-info p {
+    margin-left: 20px;
 }
 
 /* Hero */
@@ -190,4 +195,8 @@ p, .disclaimer {
 
 a.btn {
     color: #fff !important;
+}
+
+#hint_id_password {
+    display: none !important;
 }

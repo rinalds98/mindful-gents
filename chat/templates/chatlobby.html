@@ -8,10 +8,19 @@
     No one is waiting
     {% else %}
     {% for room in open_rooms %}
-    <p class="text-light">{{ room.chat_room_name }} | <a href="{{ room.chat_room_url }}">Click to enter</a>
+    <p class="text-light">{{ room.chat_room_name }} | <a href="../{{room.chat_room_url }}">Click
+            to
+            join</a>
     </p>
     {% endfor %}
     {% endif %}
     </div>
 </section>
+
+<script type="text/javascript">
+    setTimeout(function () {
+        location.reload();
+    }, 60 * 100);
+</script>
+
 {% endblock %}

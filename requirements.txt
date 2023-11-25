@@ -46,3 +46,4 @@ urllib3==2.1.0
 webencodings==0.5.1
 whitenoise==6.5.0
 zope.interface==6.1
+websockets

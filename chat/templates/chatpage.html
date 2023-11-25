@@ -36,9 +36,18 @@
         event.target.setCustomValidity('');
     })
 
+    function generate_suffix(_len) {
+        return Array.from({
+            length: _len
+        }, () => Math.floor(Math.random() * 10));
+    }
+
     document.querySelector('#room-name-submit').onclick = function (e) {
+
+        var suffix = generate_suffix(4)
+        var suffix_str = suffix.toString()
         var roomName = document.querySelector
-            ('#room-name-input').value;
+            ('#room-name-input').value + suffix_str.replaceAll(",", "");
         if (roomName) {
 
             window.location.pathname = '/chat/room/' + roomName + '/';

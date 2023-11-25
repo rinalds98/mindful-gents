@@ -18,7 +18,7 @@
         <button type="submit" id="id_message_send_button" disabled>Send Message</button>
         <br />
         <br />
-        <a id="leave-chat" href="{% url 'chat:leave_room' current_room.pk %}" class="button">Leave chat</a>
+        <a id="leave-chat" href="{% url 'chat:leave_room' room_name %}" class="button">Leave chat</a>
     </div>
     {{ room_name|json_script:"room-name" }}
     <script>

@@ -21,22 +21,13 @@ def chat_room(request, room_name):
 
     anonym_name = None
     if not request.user.is_authenticated:
-        anonym_name = room_name
-
-    # create a new OpenRoom object
-    
-    rooms = [room.chat_room_name for room in OpenRoom.objects.all()]
-
-    suffix = "".join([str(randint(0,9)) for x in range(4)])
-    display_name = f"{room_name}_{suffix}"
-    current_room = OpenRoom.objects.create(
-            chat_room_name=display_name, chat_room_url=request.path)
+        anonym_name = room_name[:-4]
         
 
     context = {
         "anonym_name": anonym_name,
         "room_name": room_name,
-        "current_room": current_room,
+        # "current_room": current_room,
         }
 
     return render(request, "chatroom.html", context)
@@ -53,8 +44,8 @@ def chat_lobby(request):
     return render(request, "chatlobby.html", context)
 
 
-def leave_room(request, pk):
-    room = OpenRoom.objects.get(id=pk)
+def leave_room(request, room_name):
+    room = OpenRoom.objects.get(chat_room_name=room_name)
 
     room.delete()
     if not request.user.is_authenticated:

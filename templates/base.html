@@ -13,6 +13,13 @@
     {% endblock %}
     <title>Mindful Gents</title>
     <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.svg' %}">
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" ></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
     
@@ -175,5 +182,6 @@
     <script src="https://kit.fontawesome.com/92bb20ec43.js" crossorigin="anonymous"></script>
     {% block extra_js %}
     {% endblock %}
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

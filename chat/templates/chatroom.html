@@ -33,7 +33,7 @@
         }
         const chatSocket = new WebSocket(
             wsStart
-            + window.location.host
+            + window.location.host+':8001'
             + '/ws/chat/room/'
             + roomName
             + '/'

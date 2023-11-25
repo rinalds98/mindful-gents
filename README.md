@@ -4,13 +4,13 @@ Mindful-Gents
  </strong>
  </h1>
 
-![Mindful-Gents Home screen image]()
+![Mindful-Gents Home screen image](static/images/readme-image/am-i-resonsive.png)
 
 # SUBMISSION
 
 ## Deployment
 
-This project is deployed and can be accessed at
+This project is deployed and can be accessed at (https://mindful-gents-1abd5af4698b.herokuapp.com/)
 
 ## Criteria
 
@@ -63,7 +63,7 @@ In this section, we will briefly discuss how our team addressed the applicable c
 * As a user, I want to be able to navigate to a 'contact us' page so that I can find 'Mindful-gent's chat features and login details.
 
 
-![Project Board]() 
+![Project Board](static/images/readme-image/Mindful-Gents-project-board.png) 
 
 ## Design
 
@@ -72,42 +72,50 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
   ### Color Design
   
-  * Color palette()
+  ![Color pallette](static/images/readme-image/colour-image.png)
 
-
-  
   ### Visual Design
 
-  * site looks and setup()
+  ! [site set-up](static/images/readme-image/database schema.png)
   
- 
 ## Typography
  
  *  The font chosen for the site was Source Sans 3 - a Sans Serif font. It was picked from Google Fonts 
     as we wanted an easy to read font that was inviting for a user to continue reading and browsing throughout the site.  
 
 ## Imagery
- * Team Logo was created using()
-  * Logo was designed to incorporate bright colorway using() 
-  
+ * Team Logo was created using [Logo](https://logo.com/)
+    * Logo was designed to incorporate bright colorway using [Logo](https://logo.com/)
+    
   * Background Images All images used throughout site are royalty free and sourced from 
-    [istock](www.istock.com).
-
-   * Welcome page
-   * 
-
-
-  * Favicon
+    [Logo](https://logo.com/)
+    
+    * Pixel Art
+     * The pixel art was designed using [pixel art](https://www.pixilart.com)
+    * Front page 
+     * The images were takenfrom [Logo](https://logo.com/)
+    * Favicon
+     * Favicon was created using [Logo](https://logo.com/)
 
 ## Controls
- -
- -
+
+ ### Version Control
+
+ * [Github](https://github.com/) used to host repository.
+ * [Heroku](https://www.heroku.com/) used to deploy the website.
+  
+ 
+  * [VScode](https://code.visualstudio.com/) is  free and open-source code editor and customizable tool 
+   for writing code.
 
 ## Wireframes
- [Figma](www.figma.com) is a cloud-based design and prototyping tool that is widely used for creating user interfaces (UI) and user experience (UX) designs. 
+ [Figma](www.figma.com) is a cloud-based design and prototyping tool that is widely used for creating user interfaces (UI) and user experience (UX) designs.
 
+   ![wireframe 1](static/images/readme-image/mindful-wireframes-1.png) ![wireframe 2](static/images/readme-image/mindful-wireframes-2.png)  
+   ![wireframe 3](static/images/readme-image/mindful-wireframes-3.png) ![wireframe 4](static/images/readme-image/mindful-wireframes-4.png)
+   ![wireframe 5](static/images/readme-image/mindful-wireframes-5.png)
 
-## Tech
+## Technology Used
   
 * HTML5
 * CSS3
@@ -118,14 +126,12 @@ In this section, we will briefly discuss how our team addressed the applicable c
 * API
 * Heroku
 
-![Languages]
+  
+  ## Local Deployment
 
-
-## Local Deployment
-
-In order to make a local copy of this project, you can clone it.
-In your IDE Terminal, type the following command to clone our repository:
-
+ - In order to make a local copy of this project, you can clone it.
+ - In your IDE Terminal, type the following command to clone our repository:
+ -  git clone (https://github.com/rinalds98/mindful-gents)
 
 ## Testing
 
@@ -136,25 +142,25 @@ The site was tested on the following browsers:
 - Microsoft Edge
 
 
-![Languages]
+
 
 
 ## Bugs and fixes
+
  - Changes to Chat model - caused issues with migration - solution delete database and migrate again.
 
  -
  -
 
 ## Programs Used
- -
- -
-
-  ### Code Editors
+ 
+ ### Code Editors
 
 * [Codeanywhere](https://app.codeanywhere.com/) used to develop project and organise version control.
 * [Gitpod](https://gitpod.io/) used to develop project and organise version control.
 * [VScode](https://code.visualstudio.com/) free and open-source code editor for writing code.
-
+* [Heroku](https://www.heroku.com/) used to deploy the website.
+  
 ### Libraries
 
  * [StackOverflow](https://stackoverflow.com/) used to problem solve and deal with queries.
@@ -169,10 +175,18 @@ The site was tested on the following browsers:
   
   **Thank you to all the team members for the hard work and cooperation.**
   
+ - **Rinalds Zimelis** [GitHub](https://github.com/rinalds98), [LinkedIn](https://www.linkedin.com/in/rinalds-zimelis/)  
+  Scrum Master/ Frontend / Backend/ Documentation
   
-
- - **Rinalds Zimelis** - [GitHub](https://github.com/rinalds98), [LinkedIn](https://www.linkedin.com/in/rinalds-zimelis/)  
-  Scrum Master/ Frontend / Back End/ Documentation
+ - **Ant_4P**[GitHub]() [LinkedIn]()
+  Frontend / Backend/ Documentation
   
- - ** **-
- 
+ - **Jonathan Wenn_5p** [GitHub]() [LinkedIn]
+ Frontend / Backend/ Documentation
+  
+- **Koko-66_alum** [GitHub](https://github.com/Koko-66) [LinkedIn](https://www.linkedin.com/in/k-c-n)
+Frontend / Backend/ Documentation
+  
+- **O.Esther** [GitHub](https://github.com/57Esther) [LinkedIn]()
+Frontend / Documentation
+  

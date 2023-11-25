@@ -22,8 +22,8 @@
     </div>
     {{ room_name|json_script:"room-name" }}
     <script>
-        name = JSON.parse(document.getElementById('room-name').textContent);
-        const roomName = name.replace(" ", "")
+        var name = JSON.parse(document.getElementById('room-name').textContent);
+        const roomName = name.replace(/[^A-Z0-9]+/ig, "")
         let joined = false;
 
         console.log(roomName)

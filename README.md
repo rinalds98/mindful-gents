@@ -76,7 +76,7 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
   ### Visual Design
   
-   ![set-up](static/images/readme-image/database schema.png)
+   ![set-up](static/images/readme-image/database-schema.png)
   
 ## Typography
  
@@ -96,6 +96,8 @@ In this section, we will briefly discuss how our team addressed the applicable c
      * The images were takenfrom [Logo](https://logo.com/)
   * Favicon
      * Favicon was created using [Logo](https://logo.com/)
+  *  Api/Maps was created using [here develper](https://developer.here.com/)
+    * Maps and crisis services content were gotten from [Mind](https://www.mind.org.uk/)
 
 ## Controls
 
@@ -103,9 +105,8 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
  * [Github](https://github.com/) used to host repository.
  * [Heroku](https://www.heroku.com/) used to deploy the website.
-  
- 
-  * [VScode](https://code.visualstudio.com/) is  free and open-source code editor and customizable tool 
+
+ * [VScode](https://code.visualstudio.com/) is  free and open-source code editor and customizable tool 
    for writing code.
 
 ## Wireframes
@@ -177,15 +178,15 @@ The site was tested on the following browsers:
  - **Rinalds Zimelis** [GitHub](https://github.com/rinalds98), [LinkedIn](https://www.linkedin.com/in/rinalds-zimelis/)  
   Scrum Master/ Frontend / Backend/ Documentation
   
- - **Ant_4P**[GitHub]() [LinkedIn]()
+ - **Ant_4P**[GitHub](https://github.com/ant2210) [LinkedIn]()
   Frontend / Backend/ Documentation
   
- - **Jonathan Wenn_5p** [GitHub]() [LinkedIn]
- Frontend / Backend/ Documentation
+ - **Jonathan Wenn_5p** [GitHub](https://github.com/jw-coder84/) [LinkedIn](https://www.linkedin.com/in/jonathanwenn/)
+  Frontend / Backend/ Documentation
   
 - **Koko-66_alum** [GitHub](https://github.com/Koko-66) [LinkedIn](https://www.linkedin.com/in/k-c-n)
-Frontend / Backend/ Documentation
+  Frontend / Backend/ Documentation
   
-- **O.Esther** [GitHub](https://github.com/57Esther) [LinkedIn]()
-Frontend / Documentation
+- **O.Esther** [GitHub](https://github.com/57Esther) [LinkedIn]( https://www.linkedin.com/in/oluwaseun-olawunmi-adeoye-862a56225/)
+  Frontend / Documentation.
   

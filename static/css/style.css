@@ -153,13 +153,8 @@ footer {
     padding-top: 1rem;
 }
 
-/* registration page */
-.allauth {
-    margin-top: 150px;
-}
-
 /* Login/Signup Forms */
-h3 {
+h2, h3 {
     color: var(--primary) !important;
 }
 
@@ -199,4 +194,39 @@ a.btn {
 
 #hint_id_password {
     display: none !important;
+}
+
+/* Profile Form */
+#div_id_isExpert,
+#div_id_expertinfo {
+    margin-bottom: 15px;
+}
+
+/* Chat Window */
+#id_chat_item_container {
+    width: 600px;
+    max-width: 90%;
+}
+
+#message-window {
+    width: 600px;
+    max-width: 100%;
+    height: 350px;
+    border-radius: 6px;
+    overflow-y: auto;
+    border: #fff solid 2px;
+}
+
+#send-box {
+    width: 100%;
+}
+
+#id_message_send_button {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.messages {
+    color: #fff;
+    padding: 0 5px;
 }

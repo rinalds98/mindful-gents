@@ -1,14 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
+
 {% block content %}
 
+<h2 class="mt-5 pt-5 text-center">Please tell us about your relevant experience</h2>
+
 <div class="container-fluid d-flex align-items-center justify-content-center allauth">
-<form method="post" action="{% url 'registration' %}">
+
+<form id="profile-form" method="post" action="{% url 'registration' %}">
     {% csrf_token %}
 
-    {{ profile_form.as_p }}
+    {{ profile_form|crispy }}
 
-    <button class="btn btn-outline-primary btn-lg" type="submit">Submit</button>
+    <button class="btn btn-primary btn-lg my-3" type="submit">Submit</button>
 </form>
 </div>
 

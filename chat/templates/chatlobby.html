@@ -3,9 +3,9 @@
 {% block content %}
 <section class="m-5">
     <div class="container p-5"></div>
-    <h1 class="text-light">Open rooms</h1>
+    <h2>Open rooms</h2>
     {% if not open_rooms %}
-    No one is waiting
+    <p class="text-white">No one is waiting</p>
     {% else %}
     {% for room in open_rooms %}
     <p class="text-light">{{ room.chat_room_name }} | <a href="../{{room.chat_room_url }}">Click

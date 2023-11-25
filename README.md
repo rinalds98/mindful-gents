@@ -67,6 +67,9 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
 ## Design
 
+  The criteria suggested a site where men with experiencing mental health crisis can seek support we made sure the colour and visuals are attrative.
+
+
   ### Color Design
   
   * Color palette()
@@ -87,7 +90,8 @@ In this section, we will briefly discuss how our team addressed the applicable c
  * Team Logo was created using()
   * Logo was designed to incorporate bright colorway using() 
   
-  * Background Images All images used throughout site are royalty free and sourced from [istock](www.istock.com).
+  * Background Images All images used throughout site are royalty free and sourced from 
+    [istock](www.istock.com).
 
    * Welcome page
    * 

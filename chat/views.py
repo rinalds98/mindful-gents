@@ -18,10 +18,13 @@ def get_referer(request):
 
 def chat_room(request, room_name):
     """Render chat room page"""
-
-    anonym_name = None
-    if not request.user.is_authenticated:
-        anonym_name = room_name[:-4]
+    
+    if not get_referer(request):
+        raise Http404
+    else: 
+        anonym_name = None
+        if not request.user.is_authenticated:
+            anonym_name = room_name[:-4]
         
 
     context = {
@@ -45,9 +48,12 @@ def chat_lobby(request):
 
 
 def leave_room(request, room_name):
-    room = OpenRoom.objects.get(chat_room_name=room_name)
+    try:
+        room = OpenRoom.objects.get(chat_room_name=room_name.replace(" ", ""))
+        room.delete()
+    except Exception as e:
+        print(type(e), e)
 
-    room.delete()
     if not request.user.is_authenticated:
         return redirect('index')
     else:

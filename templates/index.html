@@ -16,7 +16,7 @@
             {% endif %}
         </div>
         <div class="col-12 text-center mt-5">
-            <a href="#content-section" class="fs-1 text-white btn"><i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#content-section" aria-label="scroll down" class="fs-1 text-white btn"><i class="fa-solid fa-chevron-down"></i></a>
         </div>
     </div>
 </div>
@@ -31,9 +31,9 @@
                 <p class="fs-5">Mindful Gents offers a discreet and confidential chat service designed to support the 75% of men who may find it challenging to discuss their mental health with friends or family. Our professional volunteers are available to lend a compassionate ear, providing a safe space for open conversations. Utilise our anonymous chat function to express your thoughts and feelings without judgment or disclosure. Your well-being matters, and at Mindful Gents, we're committed to fostering a supportive community for men seeking assistance in navigating their mental health journey. Reach out today; your conversations are held in the strictest confidence.</p>
                 
                 {% if user.is_authenticated %}
-                <a href="{% url 'chat:lobby' %}" class="btn btn-success">Chat to us now!</a>
+                <a href="{% url 'chat:lobby' %}" aria-label="Access the chat lobby" class="btn btn-success">Chat to us now!</a>
                 {% else %}
-                <a href="{% url 'chat:index' %}" class="btn btn-success">Chat to us now!</a>
+                <a href="{% url 'chat:index' %}" aria-label="Access chat service" class="btn btn-success">Chat to us now!</a>
                 {% endif %}
             </div>
         </div>
@@ -47,11 +47,11 @@
                 <p class="fs-5">
                     Mindful Gents extends support beyond chat services with two additional pillars. Our 'Information Hub' serves as a valuable resource, offering essential information, insightful statistics, and even a complimentary mental health plan from the NHS in collaboration with the Department of Health and Social Care. This comprehensive repository empowers individuals with knowledge to navigate their mental health journey.
                 </p>
-                <a href="{% url 'information' %}" class="btn btn-secondary mb-5">Information Hub</a>
+                <a href="{% url 'information' %}" aria-label="Access the information hub" class="btn btn-secondary mb-5">Information Hub</a>
                 <p class="fs-5">
                     Additionally, our Crisis Services guide individuals in times of acute mental health crisis, providing a roadmap to vital resources. Mindful Gents is committed to fostering a holistic approach, ensuring men have access to a spectrum of support services tailored to their unique needs.
                 </p>
-                <a href="{% url 'crisis' %}" class="btn btn-primary">Crisis Services</a>
+                <a href="{% url 'crisis' %}" aria-label="Access the crisis services" class="btn btn-primary">Crisis Services</a>
             </div>
         </div>
     </div>

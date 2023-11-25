@@ -32,7 +32,7 @@ nav {
 }
 
 .offcanvas-body {
-    padding-right: 200px !important;
+    padding-right: 125px !important;
 }
 
 #offcanvasNavbar {
@@ -195,4 +195,8 @@ p, .disclaimer {
 
 a.btn {
     color: #fff !important;
+}
+
+#hint_id_password {
+    display: none !important;
 }

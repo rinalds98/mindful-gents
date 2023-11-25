@@ -1,52 +1,6 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
-
-
-<div class="mt-5 pt-5">
-
-    <h3>
-         If you are feeling like ending your life or feel unable to keep yourself safe,
-         please call 999 or go to A&E and ask for the contact of the nearest crisis resolution team. 
-         we have a team of mental health care professionals who work with people in severe distress.
-         If you feel affected by the content you are about to read, feel free to have a confidential 
-         chat with a member of our team.
-    </h3>
-</div>
-<hr>
-<div class="information-hub">
-<h3>
-    Why don’t men talk about mental health?
-    Is depression different for men?
-    Suicide and men
-    What can I do if I’m worried about my mental health?
-    I’m worried about someone’s mental health. How can I help them?
-</h3>
-<p>
-    As with many mental health statistics, it’s hard to know if the figures really represent what is happening.
-    They can only tell us about mental health problems that have been reported – many cases may go undiagnosed.
-    This may be especially true when it comes to men’s mental health.
-</p>
-</div>
-<hr>
-<div  class="information-hub">
-    <h4>
-        Other signs might give us a better picture of the state of men’s mental health:
-    </h4>
-<p>
-   Three times as many men as women die by suicide
-   Men aged 40 to 49 have the highest suicide rates in the UK
-   At times during the coronavirus (COVID-19 pandemic), females experienced lower life satisfaction and happiness than males, 
-   which differs from pre-coronavirus pandemic analysis, as seen in our Personal well-being in the UK: October 2016 to September 2017 bulletin.
-   Men are less likely to access psychological therapies than women: only 36% of referrals to NHS talking therapies are for men
-   In addition, men are far more likely than women to go missing, sleep rough, become dependent on alcohol and use drugs frequently. 
-   Find out more about how mental health problems affect men and women differently.
-   Source: <a href="https://www.mentalhealth.org.uk/explore-mental-health/a-z-topics/men-and-mental-health">Mental Health Foundation</a>
-</p>
-<hr>
-</div>
-
-<hr>
-
+<h2 class="text-center mt-5 pt-5">Information Hub</h2>
 
 <section class="m-3">
     <div class="row">
@@ -84,39 +38,46 @@
             <img class="content-image" src="{% static 'images/1in4men.webp' %}" alt="1 in 3 men image">
         </div>
     </div>
-
-</div>
-<hr>
-
-<div class="row px-3 mb-3">
-    <div class="col-11 col-md-8 mx-auto">
-        <img class="content-image" src="{% static 'images/didyouknow.webp' %}" alt="Did you know image">
-        <small class="text-white">image credit:<a href="https://www.kidderminster.ac.uk/" target="_blank">https://www.kidderminster.ac.uk/</a></small>
+    <hr />
+    
+    <div class="row px-3">
+        <div class="col-12 col-xl-7">
+            <img class="content-image" src="{% static 'images/1in3men.webp' %}" alt="1 in 3 men image">
+        </div>
+        <div class="col-12 col-xl-5 d-flex align-items-center mt-3 mt-xl-0">
+            <div class="my-auto">
+                <p class="text-white">
+                    A stark reality has emerged from recent statistics: 1 in 3 men in the UK has grappled with suicidal thoughts. This alarming revelation underscores the pervasive impact of mental health challenges on a significant segment of the male population. The statistic highlights the need for intensified efforts in mental health awareness, breaking down stereotypes, and fostering open conversations. Societal expectations and persistent stigmas surrounding mental health often contribute to a culture of silence. Encouraging men to share their experiences without judgment and challenging traditional notions of masculinity are crucial steps. By addressing the root causes and creating a supportive, empathetic society, we can collectively work towards reducing the prevalence of suicidal thoughts and prioritizing mental well-being for everyone.
+                    <br>
+                    <br>
+                    <small class="text-white">Image credit: <a href="https://www.ccscounselling.org.uk/" target="_blank">https://www.ccscounselling.org.uk/</small></a></small>
+                </p>
+            </div>
+        </div>
     </div>
-</div>
-<hr>
-
-<div class="row px-3 mb-3">
-    <div class="col-11 col-md-8 mx-auto">
-        <img class="content-image" src="{% static 'images/myths.webp' %}" alt="Myths and facts image">
-        <small class="text-white">image credit:<a href="https://www.kidderminster.ac.uk/" target="_blank">https://www.kidderminster.ac.uk/</a></small>
+    <hr />
+    
+    <div class="row px-3 mb-3">
+        <div class="col-11 col-md-8 mx-auto">
+            <img class="content-image" src="{% static 'images/didyouknow.webp' %}" alt="Did you know image">
+            <small class="text-white">image credit:<a href="https://www.kidderminster.ac.uk/" target="_blank">https://www.kidderminster.ac.uk/</a></small>
+        </div>
     </div>
-</div>
-<hr>
-
-<div class="row px-3 mb-3">
-    <div class="col-11 col-md-8 mx-auto">
-        <img class="content-image" src="{% static 'images/improve.webp' %}" alt="Improve image">
-        <small class="text-white">image credit:<a href="https://www.kidderminster.ac.uk/" target="_blank">https://www.kidderminster.ac.uk/</a></small>
+    <hr/>
+    
+    <div class="row px-3 mb-3">
+        <div class="col-11 col-md-8 mx-auto">
+            <img class="content-image" src="{% static 'images/myths.webp' %}" alt="Myths and facts image">
+            <small class="text-white">Image credit:<a href="https://www.kidderminster.ac.uk/" target="_blank">https://www.kidderminster.ac.uk/</a></small>
+        </div>
     </div>
-</div>
-<hr>
-
-<div class="row px-3 mb-5">
-    <div class="col-11 col-md-8 mx-auto">
-        <img class="content-image" src="{% static 'images/signs.webp' %}" alt="Signs image">
-        <small class="text-white">image credit:<a href="https://www.kidderminster.ac.uk/" target="_blank">https://www.kidderminster.ac.uk/</a></small>
-
+    <hr/>
+    
+    <div class="row px-3 mb-3">
+        <div class="col-11 col-md-8 mx-auto">
+            <img class="content-image" src="{% static 'images/improve.webp' %}" alt="Improve image">
+            <small class="text-white">image credit:<a href="https://www.kidderminster.ac.uk/" target="_blank">https://www.kidderminster.ac.uk/</a></small>
+        </div>
     </div>
     <hr/>
     

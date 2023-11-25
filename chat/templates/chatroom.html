@@ -43,7 +43,7 @@
             console.log("The connection was setup successfully !");
         };
         chatSocket.onclose = function (e) {
-            console.log("Something unexpected happened!");
+            console.log(typeof (e));
         };
 
         document.querySelector("#id_message_send_input").focus();

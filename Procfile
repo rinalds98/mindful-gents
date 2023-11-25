@@ -1,2 +1,1 @@
-web: gunicorn mindfulgents.wsgi:application
-web: python app.py
+daphne -p 8001 mindfulgents.wsgi:application
